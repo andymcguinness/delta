@@ -1,0 +1,8 @@
+# npm dependencies
+node_modules/
+
+# compiled CSS
+css/*.css
+
+# Mac files
+.DS_Store
