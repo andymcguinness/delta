@@ -1,0 +1,67 @@
+/**
+ * File: icon-list.scss
+ * Description: Defines the icon list styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+
+/* === Individual Item === */
+.icon-list__item {
+  margin-top: calc-rem(15);
+
+  &:first-of-type { margin-top: 0; }
+  &:nth-child(1n) { 
+    .icon-list__item-link {
+      color: $color__blue;
+
+      &:hover { color: $color__white; }
+    }
+  }
+  &:nth-child(2n) { 
+    .icon-list__item-link {
+      color: $color__red;
+
+      &:hover { color: $color__white; }
+    }
+  }
+  &:nth-child(3n) { 
+    .icon-list__item-link {
+      color: $color__brown;
+
+      &:hover { color: $color__white; }
+    }
+  }
+  &:nth-child(4n) { 
+    .icon-list__item-link {
+      color: $color__blue;
+
+      &:hover { color: $color__white; }
+    }
+  }
+  &:nth-child(5n) { 
+    .icon-list__item-link {
+      color: $color__red;
+
+      &:hover { color: $color__white; }
+    }
+  }
+}
+.icon-list__item-link {
+  text-decoration: none;
+  @include vendor-prefix(transition, 'color .3s ease');
+}
+.icon-list__icon {
+  display: inline;
+  float: none;
+  vertical-align: middle;
+  font-size: calc-rem(25);
+}
+.icon-list__title {
+  display: inline;
+  float: none;
+  margin-left: calc-rem(5);
+  vertical-align: middle;
+  font-size: calc-rem(20);
+  font-weight: bold;
+}
