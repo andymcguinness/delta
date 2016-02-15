@@ -33,9 +33,12 @@
   display: inline-block;
   float: left;
   width: auto;
+  font-weight: bold;
+}
+.header__link {
   color: $color__white;
   font-size: calc-rem(50);
-  font-weight: bold;
+  text-decoration: none;
 }
 .header__icon {
   color: $color__blue;

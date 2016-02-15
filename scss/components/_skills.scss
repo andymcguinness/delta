@@ -1,0 +1,77 @@
+/**
+ * File: skills.scss
+ * Description: Defines the skill styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+
+
+/* === Skill Styles === */
+%skill {
+  display: block;
+  margin-top: calc-rem(25);
+  width: 50%;
+
+  &:nth-child(odd) { padding-right: calc-rem(20); }
+  &:nth-child(even) { padding-left: calc-rem(20); }
+  &:nth-child(1),
+  &:nth-child(2) { margin-top: 0; }
+}
+
+/* === Implementation === */
+.skill {
+  @extend %skill;
+
+  &:nth-child(1n) {
+    .skill__bar-inner { background-color: $color__blue; }
+    .skill__title { color: $color__blue; }
+  }
+  &:nth-child(2n) {
+    .skill__bar-inner { background-color: $color__red; }
+    .skill__title { color: $color__red; }
+  }
+  &:nth-child(3n) {
+    .skill__bar-inner { background-color: $color__brown; }
+    .skill__title { color: $color__brown; }
+  }
+  &:nth-child(4n) {
+    .skill__bar-inner { background-color: $color__blue; }
+    .skill__title { color: $color__blue; }
+  }
+  &:nth-child(5n) {
+    .skill__bar-inner { background-color: $color__red; }
+    .skill__title { color: $color__red; }
+  }
+}
+.skill__bar {
+  display: block;
+  width: 100%;
+  border-right: calc-rem(2) solid $color__white;
+  border-bottom: calc-rem(2) solid $color__white;
+  border-left: calc-rem(2) solid $color__white;
+}
+.skill__bar-inner {
+  display: block;
+  height: calc-rem(25);
+
+  &.ninety { width: 90%; }
+  &.seventy-five { width: 75%; }
+  &.sixty { width: 60%; }
+  &.forty { width: 40%; }
+  &.twenty { width: 20%; }
+}
+.skill__before,
+.skill__after {
+  display: inline-block;
+  color: $color__white;
+  font-size: calc-rem(14);
+}
+.skill__before { float: left; }
+.skill__after { float: right; }
+.skill__title {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}

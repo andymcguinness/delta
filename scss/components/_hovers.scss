@@ -20,4 +20,6 @@
   &:nth-child(1n) { border-bottom-color: $color__blue; }
   &:nth-child(2n) { border-bottom-color: $color__red; }
   &:nth-child(3n) { border-bottom-color: $color__brown; }
+  &:nth-child(4n) { border-bottom-color: $color__blue; }
+  &:nth-child(5n) { border-bottom-color: $color__red; }
 }

@@ -23,6 +23,9 @@
 /* Buttons, dropdowns, carousels */
 @import 'components/buttons';
 @import 'components/hovers';
+@import 'components/links';
+@import 'components/resume';
+@import 'components/skills';
 @import 'components/tooltips';
 
 /* === Layout === */
@@ -32,6 +35,7 @@
 
 /* === Pages === */
 /* Specific styles for individual pages */
+@import 'pages/about';
 @import 'pages/home';
 
 /* === Themes === */

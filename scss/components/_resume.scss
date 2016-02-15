@@ -1,0 +1,38 @@
+/**
+ * File: resume.scss
+ * Description: Defines the resume styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+
+
+/* === Individual Entry === */
+.resume-entry {
+  margin-bottom: calc-rem(30);
+  color: $color__white;
+
+  &:last-of-type { margin-bottom: 0; }
+  &:nth-child(1) {
+    .resume-entry__title { border-bottom: calc-rem(2) solid $color__blue; }
+  }
+  &:nth-child(2) {
+    .resume-entry__title { border-bottom: calc-rem(2) solid $color__red; }
+  }
+  &:nth-child(3) {
+    .resume-entry__title { border-bottom: calc-rem(2) solid $color__brown; }
+  }
+}
+.resume-entry__title {
+  width: auto;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.resume-entry__company { line-height: 1.4; }
+.resume-entry__date {
+  margin-bottom: calc-rem(5);
+  color: $color__grey;
+  font-size: calc-rem(16);
+  line-height: 1.4; 
+}
+.resume-entry__description { line-height: 1.4; }

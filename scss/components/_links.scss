@@ -1,0 +1,50 @@
+/**
+ * File: links.scss
+ * Description: Defines the link styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+
+
+/* === Link Styles === */
+// Base
+%link {
+  display: inline;
+  float: none;
+  width: auto;
+  font-weight: bold;
+  text-decoration: none;
+  @include vendor-prefix(transition, 'color .3s ease, background .3s ease');
+}
+
+// Individual Styles
+.link {
+  @extend %link;
+
+  &:nth-of-type(1n) {
+    color: $color__blue;
+
+    &:hover { color: $color__white; }
+  }
+  &:nth-of-type(2n) {
+    color: $color__red;
+
+    &:hover { color: $color__white; }
+  }
+  &:nth-of-type(3n) {
+    color: $color__brown;
+
+    &:hover { color: $color__white; }
+  }
+  &:nth-of-type(4n) {
+    color: $color__blue;
+
+    &:hover { color: $color__white; }
+  }
+  &:nth-of-type(5n) {
+    color: $color__red;
+
+    &:hover { color: $color__white; }
+  }
+}
