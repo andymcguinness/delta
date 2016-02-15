@@ -9,11 +9,11 @@
 /* === Icon Font === */
 @font-face {
   font-family: 'andymcguinness';
-  src:  url('fonts/andymcguinness.eot?9lbok3');
-  src:  url('fonts/andymcguinness.eot?9lbok3#iefix') format('embedded-opentype'),
-        url('fonts/andymcguinness.ttf?9lbok3') format('truetype'),
-        url('fonts/andymcguinness.woff?9lbok3') format('woff'),
-        url('fonts/andymcguinness.svg?9lbok3#andymcguinness') format('svg');
+  src:  url('fonts/andymcguinness.eot?10o4xe');
+  src:  url('fonts/andymcguinness.eot?10o4xe#iefix') format('embedded-opentype'),
+        url('fonts/andymcguinness.ttf?10o4xe') format('truetype'),
+        url('fonts/andymcguinness.woff?10o4xe') format('woff'),
+        url('fonts/andymcguinness.svg?10o4xe#andymcguinness') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,7 +31,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.am-eighttracks:before { content: "\e901"; }
 .am-gear:before { content: "\e900"; }
+.am-twitter:before { content: "\e902"; }
+.am-twitch:before { content: "\e903"; }
+.am-github:before { content: "\e904"; }
 
 /* === General Font Styles === */
 $font__family--proxima: 'proxima-nova', 'Helvetica', 'Arial', sans-serif;
