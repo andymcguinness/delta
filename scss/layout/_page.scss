@@ -1,0 +1,16 @@
+/**
+ * File: page.scss
+ * Description: Basic styles for a page
+ * Dependencies: None
+ *
+ * @package delta
+ */
+
+/* === General Styles === */
+.page {
+  padding-top: calc-rem(100);
+  padding-right: calc-rem(100);
+  padding-bottom: calc-rem(100);
+  padding-left: calc-rem(100);
+  background: $color__black;
+}

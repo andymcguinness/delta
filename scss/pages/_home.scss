@@ -1,0 +1,22 @@
+/**
+ * File: home.scss
+ * Description: Styles for the homepage specifically
+ * Dependencies: None
+ *
+ * @package delta
+ */
+
+/* === Content === */
+.page--home {
+  .content__description {
+    margin-bottom: calc-rem(40);
+    color: $color__white;
+    font-size: calc-rem(40);
+    line-height: 1.4;
+  }
+  .content__buttons {
+    margin-top: calc-rem(15);
+
+    button:first-of-type { margin-right: calc-rem(30); }
+  }
+}

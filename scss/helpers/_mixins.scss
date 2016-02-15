@@ -14,3 +14,8 @@
        -o-#{$name}: #{$argument};
           #{$name}: #{$argument};
 }
+
+/* === Calculating Rems === */
+@function calc-rem($target) {
+    @return ($target / $text__size--base) * 1rem;
+}

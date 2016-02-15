@@ -3,7 +3,7 @@
  * Description: Basic reset for the framework
  * Dependencies: None
  *
- * @package gamma
+ * @package delta
  */
 
 /* === General Reset === */
@@ -62,7 +62,7 @@ b,
 em,
 sup,
 li a{
+  display: inline;
   float: none;
   width: auto;
-  display: inline;
 }

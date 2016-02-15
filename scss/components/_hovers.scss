@@ -1,0 +1,23 @@
+/**
+ * File: hovers.scss
+ * Description: Defines the hovers styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+
+/* === Basic Hover Style === */
+%hover {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+/* === Colors === */
+.hover {
+  @extend %hover;
+  border-bottom: calc-rem(2) solid transparent;
+
+  &:nth-child(1n) { border-bottom-color: $color__blue; }
+  &:nth-child(2n) { border-bottom-color: $color__red; }
+  &:nth-child(3n) { border-bottom-color: $color__brown; }
+}

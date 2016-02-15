@@ -6,3 +6,9 @@ css/*.css
 
 # Mac files
 .DS_Store
+
+# SASS files
+.sass-cache/
+
+# Blog database
+blog/content/data/ghost-dev.db

@@ -3,7 +3,7 @@
  * Description: Sourcemap for the project
  * Dependencies: None
  *
- * @package gamma
+ * @package delta
  */
 
 /* === Vendor === */
@@ -11,20 +11,28 @@
 
 /* === Helpers === */
 /* Vendor prefix functions, mixins, colors, breakpoints */
+@import 'helpers/colors';
 @import 'helpers/mixins';
 
 /* === Base === */
 /* Reset/typography */
 @import 'base/reset';
+@import 'base/typography';
 
 /* === Components === */
 /* Buttons, dropdowns, carousels */
+@import 'components/buttons';
+@import 'components/hovers';
+@import 'components/tooltips';
 
 /* === Layout === */
 /* Grid, header, footer, sidebar, forms, parts of pages */
+@import 'layout/header';
+@import 'layout/page';
 
 /* === Pages === */
 /* Specific styles for individual pages */
+@import 'pages/home';
 
 /* === Themes === */
 /* Any themes, like light/dark */

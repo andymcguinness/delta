@@ -1,0 +1,64 @@
+/**
+ * File: buttons.scss
+ * Description: Defines the buttons for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+
+
+/* === Button Styles === */
+// Base
+%button {
+  padding-top: calc-rem(10);
+  padding-right: calc-rem(20);
+  padding-bottom: calc-rem(10);
+  padding-left: calc-rem(20);
+  width: auto;
+  font-weight: bold;
+  text-decoration: none;
+  border: calc-rem(2) solid transparent;
+  @include vendor-prefix(transition, 'color .3s ease, background .3s ease');
+
+  &:hover {
+    cursor: pointer;
+    color: $color__white;
+  }
+}
+
+// Colors
+.button--blue {
+  @extend %button;
+
+  color: $color__blue;
+  border-color: $color__blue;
+  
+  &:hover { background-color: $color__blue; }
+}
+.button--red {
+  @extend %button;
+
+  color: $color__red;
+  border-color: $color__red;
+
+  &:hover { background-color: $color__red; }
+}
+.button--brown {
+  @extend %button;
+
+ color: $color__brown;
+ border-color: $color__brown;
+
+ &:hover { background-color: $color__brown; }
+}
+.button--disabled {
+  @extend %button;
+
+  color: $color__grey;
+  border-color: $color__grey;
+
+  &:hover {
+    cursor: default;
+    color: $color__grey;
+  }
+}
