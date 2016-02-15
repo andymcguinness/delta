@@ -1,0 +1,30 @@
+/**
+ * File: footer.scss
+ * Description: Defines the footer styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+
+/* === General === */
+.footer {
+  margin-top: calc-rem(50);
+  padding-top: calc-rem(15);
+  border-top: calc-rem(2) solid $color__white;
+}
+
+/* === Copyright === */
+.footer__copyright {
+  display: inline-block;
+  width: auto;
+  color: $color__white;
+  font-size: calc-rem(16);
+  font-weight: bold;
+}
+
+/* === Icon List === */
+.footer__icon-list {
+  display: inline-block;
+  float: right;
+  width: auto;
+}

@@ -8,9 +8,11 @@
 
 /* === Individual Item === */
 .icon-list__item {
-  margin-top: calc-rem(15);
+  display: inline-block;
+  margin-right: calc-rem(20);
+  width: auto;
 
-  &:first-of-type { margin-top: 0; }
+  &:last-of-type{ margin-right: 0; }
   &:nth-child(1n) { 
     .icon-list__item-link {
       color: $color__blue;
@@ -48,20 +50,11 @@
   }
 }
 .icon-list__item-link {
+  float: left;
   text-decoration: none;
   @include vendor-prefix(transition, 'color .3s ease');
 }
 .icon-list__icon {
-  display: inline;
-  float: none;
-  vertical-align: middle;
-  font-size: calc-rem(25);
-}
-.icon-list__title {
-  display: inline;
-  float: none;
-  margin-left: calc-rem(5);
-  vertical-align: middle;
-  font-size: calc-rem(20);
-  font-weight: bold;
+  float: left;
+  font-size: calc-rem(30);
 }
