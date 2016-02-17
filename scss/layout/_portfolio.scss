@@ -1,0 +1,103 @@
+/**
+ * File: portfolio.scss
+ * Description: Defines the portfolio styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+
+/* === General === */
+.portfolio { margin-top: calc-rem(30); }
+
+/* === Individual Items === */
+// General
+.portfolio-item {
+  margin-left: calc-rem(40);
+  padding-bottom: calc-rem(60);
+  padding-left: calc-rem(80);
+  width: auto;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: calc-rem(-2);
+    display: inline-block;
+    height: 100%;
+    width: calc-rem(2);
+    background: $color__white;
+  }
+  &:first-of-type {
+    &:before {
+      top: 50%;
+      height: 50%;
+    }
+  }
+  &:last-of-type {
+    padding-bottom: 0;
+
+    &:before { height: 50%; }
+  }
+  &:nth-child(1n) {
+    .portfolio-item__year { background-color: $color__blue; }
+    .portfolio-link__title { border-bottom-color: $color__blue; }
+  }
+  &:nth-child(2n) {
+    .portfolio-item__year { background-color: $color__red; }
+    .portfolio-link__title { border-bottom-color: $color__red; }
+  }
+  &:nth-child(3n) {
+    .portfolio-item__year { background-color: $color__brown; }
+    .portfolio-link__title { border-bottom-color: $color__brown; }
+  }
+  &:nth-child(4n) {
+    .portfolio-item__year { background-color: $color__blue; }
+    .portfolio-link__title { border-bottom-color: $color__blue; }
+  }
+  &:nth-child(5n) {
+    .portfolio-item__year { background-color: $color__red; }
+    .portfolio-link__title { border-bottom-color: $color__red; }
+  }
+}
+.portfolio-item__year {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc-rem(-125);
+  padding-top: calc-rem(30);
+  padding-right: calc-rem(20);
+  padding-bottom: calc-rem(30);
+  padding-left: calc-rem(20);
+  color: $color__white;
+  font-weight: bold;
+  @include vendor-prefix('border-radius', '50%');
+}
+
+// Link
+.portfolio-link__image {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  width: 15%;
+}
+.portfolio-link__content{
+  display: inline-block;
+  float: none;
+  padding-left: calc-rem(20);
+  vertical-align: middle;
+  width: 80%;
+}
+.portfolio-link__title {
+  width: auto;
+  color: $color__white;
+  font-size: calc-rem(30);
+  font-weight: bold;
+  border-bottom: calc-rem(2) solid transparent;
+}
+.portfolio-link__technology {
+  margin-top: calc-rem(5);
+  color: $color__white;
+  font-size: calc-rem(16);
+}
+.portfolio-link__button-wrapper { margin-top: calc-rem(25); }
+
+// Overlay
+.portfolio-overlay { display: none; }

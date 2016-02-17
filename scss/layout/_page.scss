@@ -14,3 +14,21 @@
   padding-left: calc-rem(100);
   background: $color__black;
 }
+
+/* === Content === */
+.content__section {
+  margin-bottom: calc-rem(40);
+
+  &:last-of-type { margin-bottom: 0; }
+}
+.content__heading {
+  margin-bottom: calc-rem(20);
+  color: $color__brown;
+  font-size: calc-rem(30);
+  font-weight: bold;
+}
+.content__description {
+  margin-bottom: calc-rem(20);
+  color: $color__white;
+  line-height: 1.4;
+}

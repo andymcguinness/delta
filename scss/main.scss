@@ -23,21 +23,22 @@
 /* Buttons, dropdowns, carousels */
 @import 'components/buttons';
 @import 'components/hovers';
-@import 'components/icon-list';
 @import 'components/links';
-@import 'components/resume';
-@import 'components/skills';
-@import 'components/tooltips';
 
 /* === Layout === */
 /* Grid, header, footer, sidebar, forms, parts of pages */
 @import 'layout/footer';
+@import 'layout/forms';
 @import 'layout/header';
+@import 'layout/icon-list';
+@import 'layout/modals';
 @import 'layout/page';
+@import 'layout/portfolio';
+@import 'layout/resume';
+@import 'layout/skills';
 
 /* === Pages === */
 /* Specific styles for individual pages */
-@import 'pages/about';
 @import 'pages/home';
 
 /* === Themes === */
