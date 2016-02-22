@@ -9,12 +9,15 @@
 
 /* === Skill Styles === */
 %skill {
-  display: block;
+  display: inline-block;
   margin-top: calc-rem(25);
   width: 50%;
 
   &:nth-child(odd) { padding-right: calc-rem(20); }
-  &:nth-child(even) { padding-left: calc-rem(20); }
+  &:nth-child(even) {
+    float: right;
+    padding-left: calc-rem(20);
+  }
   &:nth-child(1),
   &:nth-child(2) { margin-top: 0; }
 }

@@ -6,4 +6,100 @@
  * @package delta
  */
 
-/* === General Form Styles === */
+/* === General Styles === */
+.form {
+  max-width: calc-rem(500);
+
+  &--contact {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* === Colors === */
+.form--red {
+  label.form__label { background: $color__red; }
+  .form__submit-button { @extend .button--red; }
+}
+.form--blue {
+  label.form__label { background: $color__blue; }
+  .form__submit-button { @extend .button--blue; }
+}
+.form--brown {
+  label.form__label { background: $color__brown; }
+  .form__submit-button { @extend .button--brown; }
+}
+
+/* === Sections === */
+.form__section {
+  display: inline-block;
+  float: none;
+  margin-bottom: calc-rem(40);
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+/* === Labels === */
+label.form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: calc-rem(10);
+  padding-right: calc-rem(15);
+  padding-bottom: calc-rem(10);
+  padding-left:calc-rem(15);
+  width: auto;
+  color: $color__white;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    float: none;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .form__label-icon {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+  }
+}
+
+/* === Inputs === */
+input.form__input {
+  padding-top: calc-rem(10);
+  padding-right: calc-rem(10);
+  padding-bottom: calc-rem(10);
+  padding-left: calc-rem(60);
+  font-size: calc-rem(18);
+  font-weight: bold;
+  background: $color__grey--light;
+  border: calc-rem(2) solid $color__grey--light;
+  @include vendor-prefix(transition, 'background .3s ease');
+
+  &:focus { background: $color__white; }
+}
+textarea.form__textarea {
+  height: calc-rem(150);
+  padding-top: calc-rem(10);
+  padding-right: calc-rem(10);
+  padding-bottom: calc-rem(10);
+  padding-left: calc-rem(60);
+  font-size: calc-rem(18);
+  font-weight: bold;
+  background: $color__grey--light;
+  border: calc-rem(2) solid $color__grey--light;
+  resize: none;
+  @include vendor-prefix(transition, 'background .3s ease');
+
+  &:focus { background: $color__white; }
+}
+
+/* === Submit Button === */
+.form__section--submit { text-align: center; }
+.form__submit-button {
+  display: inline-block;
+  float: none;
+}

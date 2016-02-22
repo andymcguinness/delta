@@ -7,12 +7,16 @@
  */
 
 /* === General Styles === */
-.page {
+.page { background: $color__black; }
+.page__inner{
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc-rem(980);
   padding-top: calc-rem(100);
   padding-right: calc-rem(100);
   padding-bottom: calc-rem(100);
   padding-left: calc-rem(100);
-  background: $color__black;
 }
 
 /* === Content === */
@@ -32,3 +36,4 @@
   color: $color__white;
   line-height: 1.4;
 }
+.content__buttons { margin-top: calc-rem(15); }

@@ -45,6 +45,11 @@
   -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
 }
+.clearfix {
+  clear: both;
+  display: table;
+  float: none;
+}
 
 /* === Fixing Things After Reset === */
 script,

@@ -15,42 +15,104 @@
   </head>
 
   <body class="page page--home home">
+    <div class="page__inner">
 
-    <!-- // PAGE HEADER // -->
-    <div class="page__header header">
+      <!-- // PAGE HEADER // -->
+      <div class="page__header header">
 
-      <!-- // TITLE // -->
-      <h1 class="header__title"><a class="header__link" href="/" title="Home"><i class="header__icon am-gear"></i> Andy McGuinness</a></h1>
+        <!-- // TITLE // -->
+        <h1 class="header__title"><a class="header__link" href="/" title="Home"><i class="header__icon am-gear"></i> Andy McGuinness</a></h1>
 
-      <!-- // NAV/LINKS // -->
-      <nav class="header__nav header-nav">
-        <a class="header-nav__item header-nav__item--work" href="work" title="Work">Work</a>
-        <a class="header-nav__item header-nav__item--about" href="about" title="About">About</a>
-        <a class="header-nav__item header-nav__item--blog" href="blog" title="Blog">Blog</a>
-      </nav>
+        <!-- // NAV/LINKS // -->
+        <nav class="header__nav header-nav">
+          <a class="header-nav__item header-nav__item--work" href="work" title="Work">Work</a>
+          <a class="header-nav__item header-nav__item--about" href="about" title="About">About</a>
+          <a class="header-nav__item header-nav__item--blog" href="blog" title="Blog">Blog</a>
+        </nav>
 
-    </div>
-
-    <!-- // PAGE CONTENT // -->
-    <div class="page__content content">
-      <p class="content__description">Hi, I'm <span class="hover" data-content="Short for Andrew. Well, short for Michael Andrew.">Andy</span>. I'm a freelance <span class="hover" data-content="Plugins & theme development.">WordPress</span>, <span class="hover" data-content="BEM methodology, SASS, HTML5, jQuery.">Front-End</span>, <span class="hover" data-content="MEAN stack/learning RxJS.">JavaScript</span>, and soon-to-be <span class="hover" data-content="Django, hopefully.">Python</span> developer.</p>
-      <p class="content__description">I love <span class="hover" data-content="Currently: Python, RxJS, Russian, photography.">learning new things</span> and <span class="hover" data-content="Seriously, bring it.">being challenged</span>.</p>
-
-      <div class="content__buttons">
-        <button class="button--brown tooltip" data-content="Feel free to use this form to get in touch with me!">Say Hello</button>
       </div>
+
+      <!-- // PAGE CONTENT // -->
+      <div class="page__content content">
+        <p class="content__description">Hi, I'm <span class="hover" data-content="Short for Andrew. Well, short for Michael Andrew.">Andy</span>. I'm a freelance <span class="hover" data-content="Plugins & theme development.">WordPress</span>, <span class="hover" data-content="BEM methodology, SASS, HTML5, jQuery.">Front-End</span>, <span class="hover" data-content="MEAN stack/learning RxJS.">JavaScript</span>, and soon-to-be <span class="hover" data-content="Django, hopefully.">Python</span> developer.</p>
+        <p class="content__description">I love <span class="hover" data-content="Currently: Python, RxJS, Russian, photography.">learning new things</span> and <span class="hover" data-content="Seriously, bring it.">being challenged</span>.</p>
+
+        <div class="content__buttons">
+          <button class="button--brown modal-trigger" data-modal="contact-form">Say Hello</button>
+        </div>
+      </div>
+
+      <!-- // MODAL /// -->
+      <div id="contact-form" class="modal modal--brown page__contact-form contact-form">
+        <div class="modal__inner">
+
+          <!-- // CLOSE // -->
+          <a href="#" class="modal__close">X</a>
+
+          <!-- // TITLE // -->
+          <h2 class="modal__title modal__title">Say Hello</h2>
+
+          <!-- // CONTENT // -->
+          <div class="modal__content">
+            <form class="contact-form__form form form--contact form--brown" action="http://formspree.io/nxnrqzwx" method="POST">
+
+              <!-- From Name -->
+              <div class="form__section">
+                <input type="name" name="name" id="name" class="form__input" placeholder="Your Name" />
+                <label for="name" class="form__label"><i class="am-user form__label-icon"></i></label>
+              </div>
+
+              <!-- From Email -->
+              <div class="form__section">
+                <input type="email" name="_replyto" id="_replyto" class="form__input" placeholder="Your Email Address" />
+                <label for="_replyto" class="form__label"><i class="am-email form__label-icon"></i></label>
+              </div>
+
+              <!-- Message -->
+              <div class="form__section">
+                <textarea name="message" id="message" class="form__textarea" placeholder="Your Message" ></textarea>
+                <label for="message" class="form__label"><i class="am-pencil form__label-icon"></i></label>
+              </div>
+
+              <!-- Hidden Fields -->
+              <input type="hidden" name="_subject" id="_subject" value="Just Saying Hello!" />
+
+              <!-- Submit Button -->
+              <div class="form__section form__section--submit">
+                <input type="submit" class="form__submit-button" value="Submit" />
+              </div>
+
+            </form>
+          </div>
+
+          <!-- // LOADING // -->
+          <div class="modal__loading">
+            <i class="modal__loading-icon am-loading"></i>
+          </div>
+
+          <!-- // SUCCESS // -->
+          <div class="modal__success">
+            <i class="modal__success-icon am-checkmark"></i>
+            <h3 class="modal__success-text">Thank you! Your email has been received. I'll get back to you as soon as I can.</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- // FOOTER // -->
+      <div class="page__footer footer">
+        <p class="footer__copyright">&copy; Andy McGuinness, 2016.</p>
+        <ul class="footer__icon-list icon-list">
+          <li class="icon-list__item"><a class="icon-list__item-link tooltip" data-content="andymcguinness" href="https://github.com/andymcguinness" title="Andy McGuinness on GitHub"><i class="am-github icon-list__icon"></i></a></li>
+          <li class="icon-list__item"><a class="icon-list__item-link tooltip" data-content="@andymcgnnss" href="https://twitter.com/andymcgnnss" title="Andy McGuinness on Twitter"><i class="am-twitter icon-list__icon"></i></a></li>
+          <li class="icon-list__item"><a class="icon-list__item-link tooltip" data-content="andymcguinness" href="http://8tracks.com/andymcguinness" title="Andy McGuinness on 8Tracks"><i class="am-eighttracks icon-list__icon"></i></a></li>
+          <li class="icon-list__item"><a class="icon-list__item-link tooltip" data-content="AndyMcGuinness" href="http://www.twitch.tv/andymcguinness" title="Andy McGuinness on Twitch"><i class="am-twitch icon-list__icon"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="clearfix"></div>
     </div>
 
-    <!-- // FOOTER // -->
-    <div class="page__footer footer">
-      <p class="footer__copyright">&copy; Andy McGuinness, 2016.</p>
-      <ul class="footer__icon-list icon-list">
-        <li class="icon-list__item"><a class="icon-list__item-link tooltip" data-content="andymcguinness" href="https://github.com/andymcguinness" title="Andy McGuinness on GitHub"><i class="am-github icon-list__icon"></i></a></li>
-        <li class="icon-list__item"><a class="icon-list__item-link tooltip" data-content="@andymcgnnss" href="https://twitter.com/andymcgnnss" title="Andy McGuinness on Twitter"><i class="am-twitter icon-list__icon"></i></a></li>
-        <li class="icon-list__item"><a class="icon-list__item-link tooltip" data-content="andymcguinness" href="http://8tracks.com/andymcguinness" title="Andy McGuinness on 8Tracks"><i class="am-eighttracks icon-list__icon"></i></a></li>
-        <li class="icon-list__item"><a class="icon-list__item-link tooltip" data-content="AndyMcGuinness" href="http://www.twitch.tv/andymcguinness" title="Andy McGuinness on Twitch"><i class="am-twitch icon-list__icon"></i></a></li>
-      </ul>
-    </div>
+
     
     <!-- // LOADING SCRIPTS // -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>

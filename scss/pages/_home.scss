@@ -11,12 +11,7 @@
   .content__description {
     margin-bottom: calc-rem(40);
     color: $color__white;
-    font-size: calc-rem(40);
+    font-size: calc-rem(34);
     line-height: 1.4;
-  }
-  .content__buttons {
-    margin-top: calc-rem(15);
-
-    button:first-of-type { margin-right: calc-rem(30); }
   }
 }

@@ -9,11 +9,11 @@
 /* === Icon Font === */
 @font-face {
   font-family: 'andymcguinness';
-  src:  url('fonts/andymcguinness.eot?10o4xe');
-  src:  url('fonts/andymcguinness.eot?10o4xe#iefix') format('embedded-opentype'),
-        url('fonts/andymcguinness.ttf?10o4xe') format('truetype'),
-        url('fonts/andymcguinness.woff?10o4xe') format('woff'),
-        url('fonts/andymcguinness.svg?10o4xe#andymcguinness') format('svg');
+  src:  url('fonts/andymcguinness.eot?tk8cje');
+  src:  url('fonts/andymcguinness.eot?tk8cje#iefix') format('embedded-opentype'),
+        url('fonts/andymcguinness.ttf?tk8cje') format('truetype'),
+        url('fonts/andymcguinness.woff?tk8cje') format('woff'),
+        url('fonts/andymcguinness.svg?tk8cje#andymcguinness') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,11 +31,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.am-eighttracks:before { content: "\e901"; }
 .am-gear:before { content: "\e900"; }
+.am-eighttracks:before { content: "\e901"; }
 .am-twitter:before { content: "\e902"; }
 .am-twitch:before { content: "\e903"; }
 .am-github:before { content: "\e904"; }
+.am-email:before { content: "\e905"; }
+.am-pencil:before { content: "\e906"; }
+.am-user:before { content: "\e907"; }
+.am-loading:before { content: "\e908"; }
+.am-checkmark:before { content: "\e909"; }
 
 /* === General Font Styles === */
 $font__family--proxima: 'proxima-nova', 'Helvetica', 'Arial', sans-serif;

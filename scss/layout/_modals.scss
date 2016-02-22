@@ -7,3 +7,129 @@
  */
 
 /* === General Modal Styles === */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  padding-top: calc-rem(50);
+  padding-right: calc-rem(50);
+  padding-bottom: calc-rem(50);
+  padding-left: calc-rem(50);
+  background: rgba(0,0,0,.4);
+
+  &.active .modal__inner { @include vendor-prefix('transform', 'scale(1)'); }
+}
+.modal__inner {
+  height: 100%;
+  width: 100%;
+  background: $color__white;
+  overflow: hidden;
+  @include vendor-prefix('transform', 'scale(.8)');
+  @include vendor-prefix('transition', 'transform .3s ease');
+}
+
+/* === Colors === */
+.modal--red {
+  .modal__close { color: $color__red; }
+  .modal__title { background: $color__red; }
+  .modal__success-icon { color: $color__red; }
+}
+.modal--blue {
+  .modal__close { color: $color__blue; }
+  .modal__title { background: $color__blue; }
+  .modal__success-icon { color: $color__blue; }
+}
+.modal--brown {
+  .modal__close { color: $color__brown; }
+  .modal__title { background: $color__brown; }
+  .modal__success-icon { color: $color__brown; }
+}
+
+/* === Content === */
+.modal__close {
+  position: absolute;
+  top: calc-rem(25);
+  right: calc-rem(25);
+  z-index: 10;
+  padding-top: calc-rem(5);
+  padding-right: calc-rem(10);
+  padding-bottom: calc-rem(5);
+  padding-left: calc-rem(10);
+  width: auto;
+  font-size: calc-rem(25);
+  text-decoration: none;
+  background: $color__white;
+  @include vendor-prefix('border-radius', '50%');
+  @include vendor-prefix(transition, 'color .3s ease, background .3s ease');
+
+  &:hover {
+    color: $color__white;
+    background-color: $color__grey;
+  }
+}
+.modal__title {
+  padding-top: calc-rem(30);
+  padding-right: calc-rem(70);
+  padding-bottom: calc-rem(30);
+  padding-left: calc-rem(70);
+  color: $color__white;
+  font-size: calc-rem(30);
+  font-weight: bold; 
+  text-align: center;
+}
+.modal__content {
+  height: auto;
+  padding-top: calc-rem(30);
+  padding-right: calc-rem(30);
+  padding-bottom: calc-rem(30);
+  padding-left: calc-rem(30);
+  overflow: scroll;
+}
+
+/* === Loading === */
+.modal__loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  background: rgba(0,0,0,.4);
+
+  &:before {
+    content: '';
+    display: inline-block;
+    float: none;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.modal__loading-icon {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  color: $color__white;
+  font-size: calc-rem(60);
+  text-align: center;
+  @include vendor-prefix(animation, 'spin 1s linear infinite');
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+/* === Success === */
+.modal__success {
+  display: none;
+  padding-top: 10%;
+  padding-right: calc-rem(30);
+  padding-bottom: calc-rem(30);
+  padding-left: calc-rem(30);
+  text-align: center;
+}
+.modal__success-icon { font-size: calc-rem(120); }
+.modal__success-text { margin-top: calc-rem(30); }
