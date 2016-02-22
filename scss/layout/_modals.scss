@@ -37,16 +37,19 @@
   .modal__close { color: $color__red; }
   .modal__title { background: $color__red; }
   .modal__success-icon { color: $color__red; }
+  strong { color: $color__red; }
 }
 .modal--blue {
   .modal__close { color: $color__blue; }
   .modal__title { background: $color__blue; }
   .modal__success-icon { color: $color__blue; }
+  strong { color: $color__blue; }
 }
 .modal--brown {
   .modal__close { color: $color__brown; }
   .modal__title { background: $color__brown; }
   .modal__success-icon { color: $color__brown; }
+  strong { color: $color__brown; }
 }
 
 /* === Content === */
@@ -82,12 +85,12 @@
   text-align: center;
 }
 .modal__content {
-  height: auto;
+  height: calc(100% - 90px);
   padding-top: calc-rem(30);
   padding-right: calc-rem(30);
   padding-bottom: calc-rem(30);
   padding-left: calc-rem(30);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 /* === Loading === */

@@ -29,11 +29,13 @@ $(document).ready(function() {
     e.preventDefault();
 
     $('#' + modal).fadeIn(300).addClass('active');
+    $('html').css('overflow', 'hidden');
   });
   $('.modal__close').on('click', function(e) {
     e.preventDefault();
 
     $(this).parents('.modal').removeClass('active').fadeOut(300);
+    $('html').css('overflow', 'visible');
   });
 
   // *** FORMS ***

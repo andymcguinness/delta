@@ -72,18 +72,28 @@
 }
 
 // Link
-.portfolio-link__image {
+.portfolio-link__image-wrapper {
   display: inline-block;
   float: none;
+  height: calc-rem(150);
   vertical-align: middle;
-  width: 19%;
+  width: 22%;
+  overflow: hidden;
+}
+.portfolio-link__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 100%;
+  width: auto;
 }
 .portfolio-link__content{
   display: inline-block;
   float: none;
   padding-left: calc-rem(20);
   vertical-align: middle;
-  width: 80%;
+  width: 77%;
 }
 .portfolio-link__title {
   width: auto;
@@ -99,5 +109,35 @@
 }
 .portfolio-link__button-wrapper { margin-top: calc-rem(25); }
 
-// Overlay
-.portfolio-overlay { display: none; }
+/* === Modals === */
+.portfolio-content__image {
+  display: inline;
+  float: left;
+  margin-right: calc-rem(15);
+  margin-bottom: calc-rem(15);
+  max-width: 33%;
+  width: auto;
+}
+.portfolio-content__meta {
+  padding-top: calc-rem(15);
+  padding-right: calc-rem(15);
+  padding-bottom: calc-rem(15);
+  padding-left: calc-rem(15);
+  margin-bottom: calc-rem(30);
+  background: $color__grey--light;
+}
+.portfolio-content__client,
+.portfolio-content__role,
+.portfolio-content__technology {
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+}
+.portfolio-content__role { text-align: center; }
+.portfolio-content__technology { text-align: right; }
+.portfolio-content__text {
+  display: inline;
+  float: none;
+  margin-top: calc-rem(15); 
+  line-height: 1.4;
+}
