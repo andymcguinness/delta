@@ -10,7 +10,8 @@
 /* === Skill Styles === */
 %skill {
   display: inline-block;
-  margin-top: calc-rem(25);
+  margin-top: calc-rem(30);
+  padding-top: calc-rem(10);
   width: 50%;
 
   &:nth-child(odd) { padding-right: calc-rem(20); }
@@ -67,6 +68,7 @@
 .skill__before,
 .skill__after {
   display: inline-block;
+  margin-top: calc-rem(5);
   color: $color__white;
   font-size: calc-rem(14);
 }
