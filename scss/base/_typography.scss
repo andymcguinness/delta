@@ -9,11 +9,11 @@
 /* === Icon Font === */
 @font-face {
   font-family: 'andymcguinness';
-  src:  url('fonts/andymcguinness.eot?tk8cje');
-  src:  url('fonts/andymcguinness.eot?tk8cje#iefix') format('embedded-opentype'),
-        url('fonts/andymcguinness.ttf?tk8cje') format('truetype'),
-        url('fonts/andymcguinness.woff?tk8cje') format('woff'),
-        url('fonts/andymcguinness.svg?tk8cje#andymcguinness') format('svg');
+  src:    url('fonts/andymcguinness.eot?m13xvw');
+  src:    url('fonts/andymcguinness.eot?m13xvw#iefix') format('embedded-opentype'),
+      url('fonts/andymcguinness.ttf?m13xvw') format('truetype'),
+      url('fonts/andymcguinness.woff?m13xvw') format('woff'),
+      url('fonts/andymcguinness.svg?m13xvw#andymcguinness') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,6 +41,7 @@
 .am-user:before { content: "\e907"; }
 .am-loading:before { content: "\e908"; }
 .am-checkmark:before { content: "\e909"; }
+.am-menu:before { content: "\e90a"; }
 
 /* === General Font Styles === */
 $font__family--proxima: 'proxima-nova', 'Helvetica', 'Arial', sans-serif;

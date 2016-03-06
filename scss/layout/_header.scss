@@ -65,3 +65,13 @@
   &:nth-child(2n):hover { color: $color__red; }
   &:nth-child(3n):hover { color: $color__brown; }
 }
+
+@media (max-width: 900px) {
+  .header-nav { display: none; }
+}
+
+/* === Mobile Nav === */
+.header-mobile-nav { display: none; }
+@media (max-width: 900px) {
+  .header-mobile-nav { display: block; }
+}
