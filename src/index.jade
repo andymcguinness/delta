@@ -1,0 +1,92 @@
+extends templates/wrapper
+
+block title
+  | Andy McGuinness
+
+block content
+  //- Header
+  include includes/header.jade
+
+  //- Content
+  .page__content.content
+    p.content__description
+      span Hi, I'm
+      &nbsp;
+      span.hover( data-content='Short for Andrew. Well, short for Michael Andrew.' ) Andy.
+      &nbsp;
+      span I'm a freelance
+      &nbsp;
+      span.hover( data-content='Plugins & theme development.' ) WordPress,
+      &nbsp;
+      span.hover( data-content='BEM methodology, SASS, HTML5, jQuery.' ) Front-End,
+      &nbsp;
+      span.hover( data-content='MEAN stack/learning RxJS.' ) JavaScript,
+      &nbsp;
+      span and soon-to-be
+      &nbsp;
+      span.hover( data-content='Django, hopefully.' ) Python
+      &nbsp;
+      span developer.
+
+    p.content__description
+      span I love
+      &nbsp;
+      span.hover( data-content='Currently: Python, RxJS, Russian, photography.' ) learning new things
+      &nbsp;
+      span and
+      &nbsp;
+      span.hover( data-content='Seriously, bring it.' ) being challenged.
+
+    .content__buttons
+      button.button--brown.modal-trigger( data-modal='contact-form' ) Say Hello
+
+  //- Modal
+  #contact-form.modal.modal--brown.page__contact-form.contact-form
+    .modal__inner
+
+      //- Modal Close
+      a.modal__close( href='#' ) X
+
+      //- Title
+      .modal__title Say Hello
+
+      //- Content
+      .modal__content
+        form.contact-form__form.form.form--contact.form--brown( action='http://formspree.io/nxnrqzwx' method='POST' )
+
+          //- From Name
+          .form__section
+            input#name.form__input( type='name' name='name' placeholder='Your Name')
+            label.form__label( for='name' )
+              i.am-user.form__label-icon
+
+          //- From Email
+          .form__section
+            input#_replyto.form__input( type='email' name='_replyto' placeholder='Your Email Address' )
+            label.form__label( for='_replyto' )
+              i.am-email.form__label-icon
+
+          //- Message
+          .form__section
+            textarea#message.form__textarea( name='message' placeholder='Your Message' )
+            label.form__label( for='message' )
+              i.am-pencil.form__label-icon
+
+          //- Hidden Subject Field
+          input#_subject( type='hidden' name='_subject' value='Just Saying Hello!' )
+
+          //- Submit Button
+          .form__section.form__section--submit
+            input.form__submit-button( type='submit' value='Submit' )
+
+      //- Loading
+      .modal__loading
+        i.modal__loading-icon.am-loading
+
+      //- Success
+      .modal__success
+        i.modal__success-icon.am-checkmark
+        h3.modal__success-text Thank you! Your email has been received. I'll get back to you as soon as I can.
+
+  //- Footer
+  include includes/footer.jade

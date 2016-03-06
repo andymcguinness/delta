@@ -51,7 +51,7 @@ label.form__label {
   padding-bottom: calc-rem(10);
   padding-left:calc-rem(15);
   width: auto;
-  color: $color__white;
+  color: $color__black;
 
   &:before {
     content: '';
@@ -79,7 +79,7 @@ input.form__input {
   border: calc-rem(2) solid $color__grey--light;
   @include vendor-prefix(transition, 'background .3s ease');
 
-  &:focus { background: $color__white; }
+  &:focus { background: $color__black; }
 }
 textarea.form__textarea {
   height: calc-rem(150);
@@ -94,7 +94,7 @@ textarea.form__textarea {
   resize: none;
   @include vendor-prefix(transition, 'background .3s ease');
 
-  &:focus { background: $color__white; }
+  &:focus { background: $color__black; }
 }
 
 /* === Submit Button === */

@@ -10,14 +10,14 @@
 .footer {
   margin-top: calc-rem(50);
   padding-top: calc-rem(15);
-  border-top: calc-rem(2) solid $color__white;
+  border-top: calc-rem(2) solid $color__black;
 }
 
 /* === Copyright === */
 .footer__copyright {
   display: inline-block;
   width: auto;
-  color: $color__white;
+  color: $color__black;
   font-size: calc-rem(16);
   font-weight: bold;
 }

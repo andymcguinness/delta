@@ -17,35 +17,35 @@
     .icon-list__item-link {
       color: $color__blue;
 
-      &:hover { color: $color__white; }
+      &:hover { color: $color__black; }
     }
   }
   &:nth-child(2n) { 
     .icon-list__item-link {
       color: $color__red;
 
-      &:hover { color: $color__white; }
+      &:hover { color: $color__black; }
     }
   }
   &:nth-child(3n) { 
     .icon-list__item-link {
       color: $color__brown;
 
-      &:hover { color: $color__white; }
+      &:hover { color: $color__black; }
     }
   }
   &:nth-child(4n) { 
     .icon-list__item-link {
       color: $color__blue;
 
-      &:hover { color: $color__white; }
+      &:hover { color: $color__black; }
     }
   }
   &:nth-child(5n) { 
     .icon-list__item-link {
       color: $color__red;
 
-      &:hover { color: $color__white; }
+      &:hover { color: $color__black; }
     }
   }
 }

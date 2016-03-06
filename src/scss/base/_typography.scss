@@ -45,10 +45,11 @@
 
 /* === General Font Styles === */
 $font__family--proxima: 'proxima-nova', 'Helvetica', 'Arial', sans-serif;
+$font__family--serifa: 'serifa', 'Times New Roman', sans-serif;
 $text__size--base: 20;
 html,
 body {
-  font-family: $font__family--proxima;
+  font-family: $font__family--serifa;
   font-size: $text__size--base * 1px;
 }
 strong { font-weight: bold; }

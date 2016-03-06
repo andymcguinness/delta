@@ -1,0 +1,1420 @@
+/**
+ * File: main.scss
+ * Description: Sourcemap for the project
+ * Dependencies: None
+ *
+ * @package delta
+ */
+/* === Vendor === */
+/* Any vendor dependencies */
+/* === Helpers === */
+/* Vendor prefix functions, mixins, colors, breakpoints */
+/**
+ * File: colors.scss
+ * Description: Defines the mixins for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === Application Colors === */
+/**
+ * File: mixins.scss
+ * Description: Defines the mixins for the application
+ * Dependencies: none
+ *
+ * @package gamma
+ */
+/* === Vendor Prefix Mixin === */
+/* === Calculating Rems === */
+/* === Base === */
+/* Reset/typography */
+/**
+ * File: reset.scss
+ * Description: Basic reset for the framework
+ * Dependencies: None
+ *
+ * @package delta
+ */
+/* === General Reset === */
+* {
+  /* Positioning */
+  position: relative;
+  vertical-align: inherit;
+  /* Box Model */
+  display: block;
+  float: left;
+  height: auto;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Typography */
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: inherit;
+  word-spacing: normal;
+  word-wrap: break-word;
+  /* Visual */
+  background: transparent;
+  border: none;
+  list-style: none;
+  outline: none;
+  /* Misc */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.clearfix {
+  clear: both;
+  display: table;
+  float: none;
+}
+
+/* === Fixing Things After Reset === */
+script,
+style,
+meta,
+title {
+  display: none;
+}
+
+br,
+i,
+b,
+span,
+s,
+.icon,
+strong,
+b,
+em,
+sup,
+li a {
+  display: inline;
+  float: none;
+  width: auto;
+}
+
+/**
+ * File: typography.scss
+ * Description: Basic typography styles for the site
+ * Dependencies: None
+ *
+ * @package delta
+ */
+/* === Icon Font === */
+@font-face {
+  font-family: 'andymcguinness';
+  src: url("fonts/andymcguinness.eot?m13xvw");
+  src: url("fonts/andymcguinness.eot?m13xvw#iefix") format("embedded-opentype"), url("fonts/andymcguinness.ttf?m13xvw") format("truetype"), url("fonts/andymcguinness.woff?m13xvw") format("woff"), url("fonts/andymcguinness.svg?m13xvw#andymcguinness") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="am-"], [class*=" am-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'andymcguinness' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.am-gear:before {
+  content: "\e900";
+}
+
+.am-eighttracks:before {
+  content: "\e901";
+}
+
+.am-twitter:before {
+  content: "\e902";
+}
+
+.am-twitch:before {
+  content: "\e903";
+}
+
+.am-github:before {
+  content: "\e904";
+}
+
+.am-email:before {
+  content: "\e905";
+}
+
+.am-pencil:before {
+  content: "\e906";
+}
+
+.am-user:before {
+  content: "\e907";
+}
+
+.am-loading:before {
+  content: "\e908";
+}
+
+.am-checkmark:before {
+  content: "\e909";
+}
+
+.am-menu:before {
+  content: "\e90a";
+}
+
+/* === General Font Styles === */
+html,
+body {
+  font-family: "serifa", "Times New Roman", sans-serif;
+  font-size: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* === Components === */
+/* Buttons, dropdowns, carousels */
+/**
+ * File: buttons.scss
+ * Description: Defines the buttons for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === Button Styles === */
+.button--blue, .form--blue .form__submit-button, .button--red, .form--red .form__submit-button, .button--brown, .form--brown .form__submit-button, .button--disabled {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  width: auto;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0.1rem solid transparent;
+  -webkit-transition: color .3s ease, background .3s ease;
+  -moz-transition: color .3s ease, background .3s ease;
+  -ms-transition: color .3s ease, background .3s ease;
+  -o-transition: color .3s ease, background .3s ease;
+  transition: color .3s ease, background .3s ease;
+}
+
+.button--blue:hover, .form--blue .form__submit-button:hover, .button--red:hover, .form--red .form__submit-button:hover, .button--brown:hover, .form--brown .form__submit-button:hover, .button--disabled:hover {
+  cursor: pointer;
+  color: #D3D5D4;
+}
+
+.button--blue, .form--blue .form__submit-button {
+  color: #628395;
+  border-color: #628395;
+}
+
+.button--blue:hover, .form--blue .form__submit-button:hover {
+  background-color: #628395;
+}
+
+.button--red, .form--red .form__submit-button {
+  color: #7A5C61;
+  border-color: #7A5C61;
+}
+
+.button--red:hover, .form--red .form__submit-button:hover {
+  background-color: #7A5C61;
+}
+
+.button--brown, .form--brown .form__submit-button {
+  color: #8A817C;
+  border-color: #8A817C;
+}
+
+.button--brown:hover, .form--brown .form__submit-button:hover {
+  background-color: #8A817C;
+}
+
+.button--disabled {
+  color: #868483;
+  border-color: #868483;
+}
+
+.button--disabled:hover {
+  cursor: default;
+  color: #868483;
+}
+
+/**
+ * File: hovers.scss
+ * Description: Defines the hovers styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === Basic Hover Style === */
+.hover {
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+/* === Colors === */
+.hover {
+  border-bottom: 0.1rem solid transparent;
+}
+
+.hover:nth-child(1n) {
+  border-bottom-color: #628395;
+}
+
+.hover:nth-child(2n) {
+  border-bottom-color: #7A5C61;
+}
+
+.hover:nth-child(3n) {
+  border-bottom-color: #8A817C;
+}
+
+.hover:nth-child(4n) {
+  border-bottom-color: #628395;
+}
+
+.hover:nth-child(5n) {
+  border-bottom-color: #7A5C61;
+}
+
+/**
+ * File: links.scss
+ * Description: Defines the link styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === Link Styles === */
+.link {
+  display: inline;
+  float: none;
+  width: auto;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: color .3s ease, background .3s ease;
+  -moz-transition: color .3s ease, background .3s ease;
+  -ms-transition: color .3s ease, background .3s ease;
+  -o-transition: color .3s ease, background .3s ease;
+  transition: color .3s ease, background .3s ease;
+}
+
+.link:nth-of-type(1n) {
+  color: #628395;
+}
+
+.link:nth-of-type(1n):hover {
+  color: #2B303A;
+}
+
+.link:nth-of-type(2n) {
+  color: #7A5C61;
+}
+
+.link:nth-of-type(2n):hover {
+  color: #2B303A;
+}
+
+.link:nth-of-type(3n) {
+  color: #8A817C;
+}
+
+.link:nth-of-type(3n):hover {
+  color: #2B303A;
+}
+
+.link:nth-of-type(4n) {
+  color: #628395;
+}
+
+.link:nth-of-type(4n):hover {
+  color: #2B303A;
+}
+
+.link:nth-of-type(5n) {
+  color: #7A5C61;
+}
+
+.link:nth-of-type(5n):hover {
+  color: #2B303A;
+}
+
+/* === Layout === */
+/* Grid, header, footer, sidebar, forms, parts of pages */
+/**
+ * File: footer.scss
+ * Description: Defines the footer styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === General === */
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 0.75rem;
+  border-top: 0.1rem solid #2B303A;
+}
+
+/* === Copyright === */
+.footer__copyright {
+  display: inline-block;
+  width: auto;
+  color: #2B303A;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* === Icon List === */
+.footer__icon-list {
+  display: inline-block;
+  float: right;
+  width: auto;
+}
+
+/**
+ * File: forms.scss
+ * Description: Defines the form styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === General Styles === */
+.form {
+  max-width: 25rem;
+}
+
+.form--contact {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* === Colors === */
+.form--red label.form__label {
+  background: #7A5C61;
+}
+
+.form--blue label.form__label {
+  background: #628395;
+}
+
+.form--brown label.form__label {
+  background: #8A817C;
+}
+
+/* === Sections === */
+.form__section {
+  display: inline-block;
+  float: none;
+  margin-bottom: 2rem;
+}
+
+.form__section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* === Labels === */
+label.form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  width: auto;
+  color: #2B303A;
+}
+
+label.form__label:before {
+  content: '';
+  display: inline-block;
+  float: none;
+  height: 100%;
+  vertical-align: middle;
+}
+
+label.form__label .form__label-icon {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
+/* === Inputs === */
+input.form__input {
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #C0C0C0;
+  border: 0.1rem solid #C0C0C0;
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  -ms-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease;
+}
+
+input.form__input:focus {
+  background: #2B303A;
+}
+
+textarea.form__textarea {
+  height: 7.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #C0C0C0;
+  border: 0.1rem solid #C0C0C0;
+  resize: none;
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  -ms-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease;
+}
+
+textarea.form__textarea:focus {
+  background: #2B303A;
+}
+
+/* === Submit Button === */
+.form__section--submit {
+  text-align: center;
+}
+
+.form__submit-button {
+  display: inline-block;
+  float: none;
+}
+
+/**
+ * File: header.scss
+ * Description: Defines the header styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === General === */
+.header {
+  margin-bottom: 3.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.header:before {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  z-index: -1;
+  height: 1rem;
+  width: 100%;
+  background: -moz-linear-gradient(315deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), -moz-linear-gradient(225deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), -moz-linear-gradient(45deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), -moz-linear-gradient(135deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61);
+  background: -webkit-linear-gradient(315deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), -webkit-linear-gradient(225deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), -webkit-linear-gradient(45deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), -webkit-linear-gradient(135deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61);
+  background: linear-gradient(135deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), linear-gradient(225deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), linear-gradient(45deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61), linear-gradient(315deg, transparent, transparent 75%, #7A5C61 75%, #7A5C61);
+  background-position: 0.5rem 0.5rem, 0.5rem 0.5rem, 0 0.5rem, 0 0.5rem;
+  background-repeat: repeat;
+  background-size: 1rem 1rem;
+}
+
+/* === Title === */
+.header__title {
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+}
+
+.header__link {
+  color: #2B303A;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.header__icon {
+  color: #628395;
+  font-size: 2rem;
+}
+
+/* === Nav === */
+.header-nav {
+  display: inline-block;
+  float: right;
+  padding-top: 1.25rem;
+  width: auto;
+}
+
+.header-nav__item {
+  display: inline-block;
+  float: left;
+  margin-right: 1.25rem;
+  width: auto;
+  color: #2B303A;
+  text-decoration: none;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.header-nav__item:last-of-type {
+  margin-right: 0;
+}
+
+.header-nav__item:nth-child(1n):hover {
+  color: #628395;
+}
+
+.header-nav__item:nth-child(2n):hover {
+  color: #7A5C61;
+}
+
+.header-nav__item:nth-child(3n):hover {
+  color: #8A817C;
+}
+
+@media (max-width: 900px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+/* === Mobile Nav === */
+.header-mobile-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header-mobile-nav {
+    display: block;
+  }
+}
+
+/**
+ * File: icon-list.scss
+ * Description: Defines the icon list styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === Individual Item === */
+.icon-list__item {
+  display: inline-block;
+  margin-right: 1rem;
+  width: auto;
+}
+
+.icon-list__item:last-of-type {
+  margin-right: 0;
+}
+
+.icon-list__item:nth-child(1n) .icon-list__item-link {
+  color: #628395;
+}
+
+.icon-list__item:nth-child(1n) .icon-list__item-link:hover {
+  color: #2B303A;
+}
+
+.icon-list__item:nth-child(2n) .icon-list__item-link {
+  color: #7A5C61;
+}
+
+.icon-list__item:nth-child(2n) .icon-list__item-link:hover {
+  color: #2B303A;
+}
+
+.icon-list__item:nth-child(3n) .icon-list__item-link {
+  color: #8A817C;
+}
+
+.icon-list__item:nth-child(3n) .icon-list__item-link:hover {
+  color: #2B303A;
+}
+
+.icon-list__item:nth-child(4n) .icon-list__item-link {
+  color: #628395;
+}
+
+.icon-list__item:nth-child(4n) .icon-list__item-link:hover {
+  color: #2B303A;
+}
+
+.icon-list__item:nth-child(5n) .icon-list__item-link {
+  color: #7A5C61;
+}
+
+.icon-list__item:nth-child(5n) .icon-list__item-link:hover {
+  color: #2B303A;
+}
+
+.icon-list__item-link {
+  float: left;
+  text-decoration: none;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.icon-list__icon {
+  float: left;
+  font-size: 1.5rem;
+}
+
+/**
+ * File: modals.scss
+ * Description: Defines the modal styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === General Modal Styles === */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  padding-top: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2.5rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal.active .modal__inner {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.modal__inner {
+  height: 100%;
+  width: 100%;
+  background: #D3D5D4;
+  overflow: hidden;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -ms-transform: scale(.8);
+  -o-transform: scale(.8);
+  transform: scale(.8);
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+}
+
+/* === Colors === */
+.modal--red .modal__close {
+  color: #7A5C61;
+}
+
+.modal--red .modal__title {
+  background: #7A5C61;
+}
+
+.modal--red .modal__success-icon {
+  color: #7A5C61;
+}
+
+.modal--red strong {
+  color: #7A5C61;
+}
+
+.modal--blue .modal__close {
+  color: #628395;
+}
+
+.modal--blue .modal__title {
+  background: #628395;
+}
+
+.modal--blue .modal__success-icon {
+  color: #628395;
+}
+
+.modal--blue strong {
+  color: #628395;
+}
+
+.modal--brown .modal__close {
+  color: #8A817C;
+}
+
+.modal--brown .modal__title {
+  background: #8A817C;
+}
+
+.modal--brown .modal__success-icon {
+  color: #8A817C;
+}
+
+.modal--brown strong {
+  color: #8A817C;
+}
+
+/* === Content === */
+.modal__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 10;
+  padding-top: 0.25rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  width: auto;
+  font-size: 1.25rem;
+  text-decoration: none;
+  background: #D3D5D4;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: color .3s ease, background .3s ease;
+  -moz-transition: color .3s ease, background .3s ease;
+  -ms-transition: color .3s ease, background .3s ease;
+  -o-transition: color .3s ease, background .3s ease;
+  transition: color .3s ease, background .3s ease;
+}
+
+.modal__close:hover {
+  color: #D3D5D4;
+  background-color: #868483;
+}
+
+.modal__title {
+  padding-top: 1.5rem;
+  padding-right: 3.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3.5rem;
+  color: #D3D5D4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal__content {
+  height: calc(100% - 90px);
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  overflow-y: scroll;
+}
+
+/* === Loading === */
+.modal__loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal__loading:before {
+  content: '';
+  display: inline-block;
+  float: none;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal__loading-icon {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  color: #D3D5D4;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -ms-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* === Success === */
+.modal__success {
+  display: none;
+  padding-top: 10%;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  text-align: center;
+}
+
+.modal__success-icon {
+  font-size: 6rem;
+}
+
+.modal__success-text {
+  margin-top: 1.5rem;
+}
+
+/**
+ * File: page.scss
+ * Description: Basic styles for a page
+ * Dependencies: None
+ *
+ * @package delta
+ */
+/* === General Styles === */
+.page {
+  background: #D3D5D4;
+}
+
+.page__inner {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 49rem;
+  padding-top: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+}
+
+/* === Content === */
+.content__section {
+  margin-bottom: 2rem;
+}
+
+.content__section:last-of-type {
+  margin-bottom: 0;
+}
+
+.content__heading {
+  margin-bottom: 1rem;
+  color: #8A817C;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.content__description {
+  margin-bottom: 1rem;
+  color: #2B303A;
+  line-height: 1.4;
+}
+
+.content__buttons {
+  margin-top: 0.75rem;
+}
+
+/**
+ * File: portfolio.scss
+ * Description: Defines the portfolio styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === General === */
+.portfolio {
+  margin-top: 1.5rem;
+}
+
+/* === Individual Items === */
+.portfolio-item {
+  margin-left: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 4rem;
+  width: auto;
+}
+
+.portfolio-item:before {
+  content: '';
+  position: absolute;
+  left: -0.1rem;
+  display: inline-block;
+  height: 100%;
+  width: 0.1rem;
+  background: #2B303A;
+}
+
+.portfolio-item:first-of-type:before {
+  top: 50%;
+  height: 50%;
+}
+
+.portfolio-item:last-of-type {
+  padding-bottom: 0;
+}
+
+.portfolio-item:last-of-type:before {
+  height: 50%;
+}
+
+.portfolio-item:nth-child(1n) .portfolio-item__year {
+  background-color: #628395;
+}
+
+.portfolio-item:nth-child(1n) .portfolio-link__title {
+  border-bottom-color: #628395;
+}
+
+.portfolio-item:nth-child(2n) .portfolio-item__year {
+  background-color: #7A5C61;
+}
+
+.portfolio-item:nth-child(2n) .portfolio-link__title {
+  border-bottom-color: #7A5C61;
+}
+
+.portfolio-item:nth-child(3n) .portfolio-item__year {
+  background-color: #8A817C;
+}
+
+.portfolio-item:nth-child(3n) .portfolio-link__title {
+  border-bottom-color: #8A817C;
+}
+
+.portfolio-item:nth-child(4n) .portfolio-item__year {
+  background-color: #628395;
+}
+
+.portfolio-item:nth-child(4n) .portfolio-link__title {
+  border-bottom-color: #628395;
+}
+
+.portfolio-item:nth-child(5n) .portfolio-item__year {
+  background-color: #7A5C61;
+}
+
+.portfolio-item:nth-child(5n) .portfolio-link__title {
+  border-bottom-color: #7A5C61;
+}
+
+.portfolio-item__year {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: -6.25rem;
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  color: #D3D5D4;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.portfolio-link__image-wrapper {
+  display: inline-block;
+  float: none;
+  height: 7.5rem;
+  vertical-align: middle;
+  width: 22%;
+  overflow: hidden;
+}
+
+.portfolio-link__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 100%;
+  width: auto;
+}
+
+.portfolio-link__content {
+  display: inline-block;
+  float: none;
+  padding-left: 1rem;
+  vertical-align: middle;
+  width: 77%;
+}
+
+.portfolio-link__title {
+  width: auto;
+  color: #2B303A;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 0.1rem solid transparent;
+}
+
+.portfolio-link__technology {
+  margin-top: 0.25rem;
+  color: #2B303A;
+  font-size: 0.8rem;
+}
+
+.portfolio-link__button-wrapper {
+  margin-top: 1.25rem;
+}
+
+/* === Page === */
+.portfolio-content__summary {
+  color: #2B303A;
+  line-height: 1.4;
+}
+
+.portfolio-content__meta {
+  display: table;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-top: 0.1rem solid #C0C0C0;
+  border-bottom: 0.1rem solid #C0C0C0;
+  text-align: center;
+}
+
+.portfolio-content__client,
+.portfolio-content__technology,
+.portfolio-content__role,
+.portfolio-content__website {
+  display: table-cell;
+  padding-top: 1rem;
+  padding-right: 0.75rem;
+  padding-bottom: 1rem;
+  padding-left: 0.75rem;
+  width: 25%;
+  color: #2B303A;
+}
+
+.portfolio-content__client strong,
+.portfolio-content__technology strong,
+.portfolio-content__role strong,
+.portfolio-content__website strong {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  width: auto;
+  color: #2B303A;
+}
+
+.portfolio-content__client span,
+.portfolio-content__technology span,
+.portfolio-content__role span,
+.portfolio-content__website span {
+  display: inline-block;
+  width: 100%;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.portfolio-content__client a,
+.portfolio-content__technology a,
+.portfolio-content__role a,
+.portfolio-content__website a {
+  color: #628395;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  word-wrap: normal;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.portfolio-content__client a:hover,
+.portfolio-content__technology a:hover,
+.portfolio-content__role a:hover,
+.portfolio-content__website a:hover {
+  color: #2B303A;
+}
+
+.portfolio-content__client strong {
+  border-bottom: 0.1rem solid #628395;
+}
+
+.portfolio-content__technology strong {
+  border-bottom: 0.1rem solid #7A5C61;
+}
+
+.portfolio-content__role strong {
+  border-bottom: 0.1rem solid #8A817C;
+}
+
+.portfolio-content__website strong {
+  border-bottom: 0.1rem solid #628395;
+}
+
+.portfolio-content__image {
+  margin-bottom: 2.5rem;
+}
+
+.portfolio-content__image:last-of-type {
+  margin-bottom: 0;
+}
+
+.portfolio-content__image-header {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.portfolio-content__image-header--blue {
+  color: #628395;
+}
+
+.portfolio-content__image-header--red {
+  color: #7A5C61;
+}
+
+.portfolio-content__image-header--brown {
+  color: #8A817C;
+}
+
+.portfolio-content__image-content {
+  display: block;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+/**
+ * File: resume.scss
+ * Description: Defines the resume styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === Individual Entry === */
+.resume-entry {
+  margin-bottom: 1.5rem;
+  color: #2B303A;
+}
+
+.resume-entry:last-of-type {
+  margin-bottom: 0;
+}
+
+.resume-entry:nth-child(1) .resume-entry__title {
+  border-bottom: 0.1rem solid #628395;
+}
+
+.resume-entry:nth-child(2) .resume-entry__title {
+  border-bottom: 0.1rem solid #7A5C61;
+}
+
+.resume-entry:nth-child(3) .resume-entry__title {
+  border-bottom: 0.1rem solid #8A817C;
+}
+
+.resume-entry__title {
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.resume-entry__company {
+  line-height: 1.4;
+}
+
+.resume-entry__date {
+  margin-bottom: 0.25rem;
+  color: #868483;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.resume-entry__description {
+  line-height: 1.4;
+}
+
+/**
+ * File: skills.scss
+ * Description: Defines the skill styles for the application
+ * Dependencies: none
+ *
+ * @package delta
+ */
+/* === Skill Styles === */
+.skill {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  width: 50%;
+}
+
+.skill:nth-child(odd) {
+  padding-right: 1rem;
+}
+
+.skill:nth-child(even) {
+  float: right;
+  padding-left: 1rem;
+}
+
+.skill:nth-child(1), .skill:nth-child(2) {
+  margin-top: 0;
+}
+
+/* === Implementation === */
+.skill:nth-child(1n) .skill__bar-inner {
+  background-color: #628395;
+}
+
+.skill:nth-child(1n) .skill__title {
+  color: #628395;
+}
+
+.skill:nth-child(2n) .skill__bar-inner {
+  background-color: #7A5C61;
+}
+
+.skill:nth-child(2n) .skill__title {
+  color: #7A5C61;
+}
+
+.skill:nth-child(3n) .skill__bar-inner {
+  background-color: #8A817C;
+}
+
+.skill:nth-child(3n) .skill__title {
+  color: #8A817C;
+}
+
+.skill:nth-child(4n) .skill__bar-inner {
+  background-color: #628395;
+}
+
+.skill:nth-child(4n) .skill__title {
+  color: #628395;
+}
+
+.skill:nth-child(5n) .skill__bar-inner {
+  background-color: #7A5C61;
+}
+
+.skill:nth-child(5n) .skill__title {
+  color: #7A5C61;
+}
+
+.skill__bar {
+  display: block;
+  width: 100%;
+  border-right: 0.1rem solid #2B303A;
+  border-bottom: 0.1rem solid #2B303A;
+  border-left: 0.1rem solid #2B303A;
+}
+
+.skill__bar-inner {
+  display: block;
+  height: 1.25rem;
+}
+
+.skill__bar-inner.ninety {
+  width: 90%;
+}
+
+.skill__bar-inner.seventy-five {
+  width: 75%;
+}
+
+.skill__bar-inner.sixty {
+  width: 60%;
+}
+
+.skill__bar-inner.forty {
+  width: 40%;
+}
+
+.skill__bar-inner.twenty {
+  width: 20%;
+}
+
+.skill__before,
+.skill__after {
+  display: inline-block;
+  margin-top: 0.25rem;
+  color: #2B303A;
+  font-size: 0.7rem;
+}
+
+.skill__before {
+  float: left;
+}
+
+.skill__after {
+  float: right;
+}
+
+.skill__title {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* === Pages === */
+/* Specific styles for individual pages */
+/**
+ * File: home.scss
+ * Description: Styles for the homepage specifically
+ * Dependencies: None
+ *
+ * @package delta
+ */
+/* === Content === */
+.page--home .content__description {
+  margin-bottom: 2rem;
+  color: #2B303A;
+  font-size: 1.7rem;
+  line-height: 1.4;
+}
+
+/* === Themes === */
+/* Any themes, like light/dark */

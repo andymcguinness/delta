@@ -24,7 +24,7 @@
     display: inline-block;
     height: 100%;
     width: calc-rem(2);
-    background: $color__white;
+    background: $color__black;
   }
   &:first-of-type {
     &:before {
@@ -97,21 +97,21 @@
 }
 .portfolio-link__title {
   width: auto;
-  color: $color__white;
+  color: $color__black;
   font-size: calc-rem(30);
   font-weight: bold;
   border-bottom: calc-rem(2) solid transparent;
 }
 .portfolio-link__technology {
   margin-top: calc-rem(5);
-  color: $color__white;
+  color: $color__black;
   font-size: calc-rem(16);
 }
 .portfolio-link__button-wrapper { margin-top: calc-rem(25); }
 
 /* === Page === */
 .portfolio-content__summary {
-  color: $color__white;
+  color: $color__black;
   line-height: 1.4;
 }
 .portfolio-content__meta {
@@ -132,13 +132,13 @@
   padding-bottom: calc-rem(20);
   padding-left: calc-rem(15);
   width: 25%;
-  color: $color__white;
+  color: $color__black;
 
   strong {
     display: inline-block;
     margin-bottom: calc-rem(10);
     width: auto;
-    color: $color__white;
+    color: $color__black;
   }
   span {
     display: inline-block;
@@ -154,7 +154,7 @@
     word-wrap: normal;
     @include vendor-prefix(transition, 'color .3s ease');
 
-    &:hover { color: $color__white; }
+    &:hover { color: $color__black; }
   }
 }
 .portfolio-content__client strong { border-bottom: calc-rem(2) solid $color__blue; }

@@ -7,7 +7,7 @@
  */
 
 /* === General Styles === */
-.page { background: $color__black; }
+.page { background: $color__white; }
 .page__inner{
   float: none;
   margin-right: auto;
@@ -33,7 +33,7 @@
 }
 .content__description {
   margin-bottom: calc-rem(20);
-  color: $color__white;
+  color: $color__black;
   line-height: 1.4;
 }
 .content__buttons { margin-top: calc-rem(15); }

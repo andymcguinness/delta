@@ -51,9 +51,9 @@
 .skill__bar {
   display: block;
   width: 100%;
-  border-right: calc-rem(2) solid $color__white;
-  border-bottom: calc-rem(2) solid $color__white;
-  border-left: calc-rem(2) solid $color__white;
+  border-right: calc-rem(2) solid $color__black;
+  border-bottom: calc-rem(2) solid $color__black;
+  border-left: calc-rem(2) solid $color__black;
 }
 .skill__bar-inner {
   display: block;
@@ -69,7 +69,7 @@
 .skill__after {
   display: inline-block;
   margin-top: calc-rem(5);
-  color: $color__white;
+  color: $color__black;
   font-size: calc-rem(14);
 }
 .skill__before { float: left; }
