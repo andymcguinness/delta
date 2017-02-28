@@ -2,7 +2,7 @@
 node_modules/
 
 # compiled CSS
-css/*.css
+dist/css/*.css
 
 # Mac files
 .DS_Store
