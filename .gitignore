@@ -12,3 +12,8 @@ css/*.css
 
 # Blog database
 blog/content/data/ghost-dev.db
+dist/blog/content/data/ghost-dev.db
+dist/blog/content/data/ghost.db
+
+# logs
+*.log
