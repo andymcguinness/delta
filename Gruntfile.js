@@ -34,13 +34,19 @@ module.exports = function(grunt) {
                         debug: false
                     }
                 },
-                files: [{
-                    expand: true,
-                    cwd: 'src/',
-                    src: ['*.pug'],
-                    dest: 'dist/',
-                    ext: '.html'
-                }]
+                files: [
+                    {src: 'src/index.pug', dest: 'dist/index.html'},
+                    {
+                        expand: true,
+                        cwd: 'src/',
+                        src: ['*.pug', '!index.pug'],
+                        dest: 'dist/',
+                        ext: '.html',
+                        rename: function (dest, src) {
+                            return dest + src.replace('.html', '') + '/index.html';
+                        }
+                    }
+                ]
             }
         }
     });

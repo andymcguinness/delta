@@ -1,0 +1,72 @@
+extends templates/wrapper
+
+block title
+	| Andy McGuinness
+
+block content
+	//- Header
+	include includes/header.pug
+
+	//- Content
+	.page__content.content
+
+		//- Intro
+		.content__section
+
+			//- Header
+			h4.content__heading Things I've Done
+
+			//- Description
+			p.content__description Below, you'll find a few of the items in my short career that were interesting challenges/complex projects/otherwise worthy of a discussion. Check them out!
+
+			//- Content
+			.content__portfolio.portfolio
+
+				//- Craftsman Club
+				.portfolio__item.portfolio-item
+					.portfolio-item__inner
+
+						//- Year
+						span.portfolio-item__year 2015
+
+						//- Link
+						.portfolio-item__link.portfolio-link
+
+							//- Image
+							.portfolio-link__image-wrapper
+								img.portfolio-link__image(src='./images/craftsman-club.png')
+
+							//- Content
+							.portfolio-link__content
+								.portfolio-link__content-inner
+									h4.portfolio-link__title Craftsman Club App
+									p.portfolio-link__technology Ruby on Rails, Redis, SCSS, Coffeescript, HAML, Git, Heroku
+
+									.portfolio-link__button-wrapper
+										a.button--red.portfolio-link__button(href='#', title='Read More') Read More
+
+				//- Code, Manage, Go
+				.portfolio__item.portfolio-item
+					.portfolio-item__inner
+
+						//- Year
+						span.portfolio-item__year 2013
+
+						//- Link
+						.portfolio-item__link.portfolio-link
+
+							//- Image
+							.portfolio-link__image-wrapper
+								img.portfolio-link__image(src='./images/code-manage-go.png')
+
+							//- Content
+							.portfolio-link__content
+								.portfolio-link__content-inner
+									h4.portfolio-link__title Code, Manage, Go!
+									p.portfolio-link__technology CodeIgniter, MySQL Workbench, User Stories, User Flows, Hello
+
+									.portfolio-link__button-wrapper
+										a.button--brown.portfolio-link__button(href='#', title='Read More') Read More
+
+	//- Footer
+	include includes/footer.pug
