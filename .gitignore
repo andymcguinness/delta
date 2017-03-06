@@ -4,6 +4,10 @@ node_modules/
 # compiled CSS
 dist/css/*.css
 
+# compiled pug to html
+dist/*
+dist/*/*.html
+
 # Mac files
 .DS_Store
 
