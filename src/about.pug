@@ -5,7 +5,7 @@ block title
 
 block content
   //- Header
-  include includes/header.jade
+  include includes/header.pug
 
   //- Content
   .page__content.content
@@ -19,30 +19,12 @@ block content
       //- Content
       p.content__description
         span I'm a 24-year-old developer currently located in
-        &nbsp;
+        span &nbsp;
         span.hover( data-content='The winters suck, but the beer is great.' ) Chicago, Illinois
         span . I specialize in full-stack development, from setting up Apache on the server to perfecting CSS animations on the front-end. I have experience in AngularJS, WordPress, CodeIgniter, and SASS, to name a few things.
 
       p.content__description
         span I constantly seek to learn new things and love new challenges. If I don't know how to do it, I'll figure it out. I'm stubborn like that.
-
-      p.content__description
-        span I'm currently the lead developer for
-        &nbsp;
-        a.link( href='http://planetary-lab.org' title='PlanetLab' ) PlanetLab
-        span , and have been working on that project for close to two years. In addition, I am also a developer with
-        a.link( href='http://brandivo.com' title='Brandivo, LLC' ) Brandivo
-        &nbsp;
-        span and
-        &nbsp;
-        a.link( href='http://advantinteractive.com' title='Advant Interactive' ) Advant Interactive
-        span , where I work on WordPress sites from plugin development to theme perfection. In my spare time, I work as an expert at
-        a.link( href='http://bugrex.com' title='BugRex' ) BugRex
-        span , a site where experts help you solve quick HTML/CSS/JS/WordPress/Rails/etc. issues. I also am working on
-        &nbsp;
-        a.link( href='https://github.com/osseusjs' title='OsseusJS' ) OsseusJS
-        &nbsp;
-        span -- yet another static site generator :)
 
       p.content__description
         span If you have any questions, or would just like to chat (about anything -- development-related or not), feel free to shoot me an email using my contact form.
@@ -108,4 +90,4 @@ block content
           span.skill__title Python
 
   //- Footer
-  include includes/footer.jade
+  include includes/footer.pug
