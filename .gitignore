@@ -17,3 +17,6 @@ dist/blog/content/data/ghost.db
 
 # logs
 *.log
+
+# whatever this is
+package-lock.json
